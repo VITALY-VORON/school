@@ -4,7 +4,7 @@ import './header.scss';
 const Header = () => {
 	return (
 		<div className='header'>
-			<div className='header_img'>
+			<div className='header__img'>
 				<img src={amazon} alt='amazon' />
 			</div>
 		</div>
