@@ -1,0 +1,11 @@
+@use '../index.scss';
+
+.product {
+	height: calc(100vh - --footer-height);
+
+	&__in-stock {
+		font-size: 48px;
+		font-weight: bold;
+		margin-left: var(--primary-margin);
+	}
+}
