@@ -2,10 +2,47 @@
 
 .product {
 	height: calc(100vh - var(--footer-height));
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 
 	&__in-stock {
 		font-size: 48px;
 		font-weight: bold;
 		margin-left: var(--primary-margin);
+	}
+
+	&__card {
+		display: flex;
+		width: calc(100% - 400px);
+		margin-left: var(--primary-margin);
+		justify-content: space-between;
+	}
+
+	&__delivery {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+
+		&__text1 {
+			font-size: 48px;
+			font-weight: bold;
+			margin-left: var(--primary-margin);
+		}
+
+		&__info {
+			display: flex;
+			width: calc(100% - 400px);
+			margin-left: var(--primary-margin);
+			justify-content: space-between;
+
+			div {
+				border: 5px solid #ee8700;
+				border-radius: 20px;
+				padding: 10px 40px;
+				font-size: 32px;
+				font-weight: bold;
+			}
+		}
 	}
 }
